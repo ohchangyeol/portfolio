@@ -1,0 +1,121 @@
+{
+    "listData":[
+        {
+            "id" :  1,
+            "demo_url" : "https://ohchangyeol.github.io/react-todo-list/",
+            "code_url" : "https://github.com/ohchangyeol/react-todo-list",
+            "title" : "Todo list",
+            "icon" : "../img/icon/todo_list.svg",
+            "script" : [
+                "React",
+                "React Hooks"
+            ],
+            "class" : "적응형 웹"
+            "summary" : "React를 학습하며 제작한 Desktop 페이지 입니다. React Hook 를 이용한 Add, delete, check 등의 기능들이 가능합니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        },
+        {
+            "id" :  2,
+            "demo_url" : "https://ohchangyeol.github.io/movie_app_2020/",
+            "code_url" : "https://github.com/ohchangyeol/movie_app_2020",
+            "title" : "Movie list",
+            "icon" : "../img/icon/movie.svg",
+            "script" : [
+                "React"
+            ],
+            "class" : "반응형 웹"
+            "summary" : "React를 학습하며 제작한 Desktop 페이지 Axios을 이용해 데이터를 불러오고, React-router-dom 을 이용해 component불러옵니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        },
+        {
+            "id" :  3,
+            "code_url" : "https://github.com/ohchangyeol/fokin-weather",
+            "title" : "Weather App",
+            "icon" : "../img/icon/weather.svg",
+            "script" : [
+                "React Native",
+                "Expo"
+            ],
+            "class" : "어플리케이션"
+            "summary" : "React를 학습하며 expo를 이용한 App Expo 와 Android Studio를 이용한 날씨 어플리케이션입니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        },
+        {
+            "id" :  4,
+            "demo_url" : "https://ohchangyeol.github.io/froot/",
+            "code_url" : "https://github.com/ohchangyeol/froot",
+            "title" : "Froot",
+            "icon" : "../img/icon/froot.svg",
+            "script" : [
+                "jQuery"
+            ],
+            "class" : "적응형 웹"
+            "summary" : "기획, 디자이너, 프로그래밍이 모두 참여한 졸업 작품 프로젝트 입니다. jQuery를 기반으로 여러 라이브러리를 이용해 제작하였습니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        },
+        {
+            "id" :  5,
+            "demo_url" : "https://ohchangyeol.github.io/Dokdo1025/",
+            "code_url" : "https://github.com/ohchangyeol/Dokdo1025",
+            "title" : "Dokdo 1025",
+            "icon" : "../img/icon/movie/dokdo.svg",
+            "script" : [
+                "Vanilla Js"
+            ],
+            "class" : "반응형 웹"
+            "summary" : "VanillaJs를 기반으로 라운드랩 '독도1025'라는 제품을 소개하는 페이지입니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        },
+        {
+            "id" :  6,
+            "demo_url" : "https://ohchangyeol.github.io/gear/",
+            "code_url" : "https://github.com/ohchangyeol/gear",
+            "title" : "Gear",
+            "icon" : "../img/icon/gear.svg",
+            "script" : [
+                "jQuery"
+            ],
+            "class" : "적응형 웹"
+            "summary" : "Samsung GALAXY Gear 소개 데스크탑 페이지 jQuery를 기반으로 패럴랙스를 이용해 제작하였습니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        },
+        {
+            "id" :  7,
+            "demo_url" : "https://ohchangyeol.github.io/vanilla-todo-list/",
+            "code_url" : "https://github.com/ohchangyeol/vanilla-todo-list",
+            "title" : "Todo list",
+            "icon" : "../img/icon/todo_list.svg",
+            "script" : [
+                "Vanilla Js"
+            ],
+            "class" : "적응형 웹"
+            "summary" : "VanillaJs를 학습하며 제작한 데스크탑 페이지 OpenWeatherMap API, localStorage, date 등을 이용하여 시간과 날씨 그리고 할일 추가,삭제 등을 사용할 수 있는 Todo list 입니다.",
+            "title_image" : "",
+            "sub_image" : ""
+        }
+
+    ],
+    snsLink : [
+        {
+            "name" : "instagram",
+            "url" : "https://www.instagram.com/o.cha_ng/",
+            "icon" : "../img/instagram.svg"
+        },
+        {
+            "name" : "github",
+            "url" : "https://github.com/ohchangyeol",
+            "icon" : "../img/github.svg"
+        },
+        {
+            "name" : "facebook",
+            "url" : "https://www.facebook.com/profile.php?id=100008649183778",
+            "icon" : "../img/facebook.svg"
+        },
+    ]
+}

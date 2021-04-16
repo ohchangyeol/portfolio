@@ -1,0 +1,68 @@
+@import "./var"
+@import "./mixin"
+
+.main_page
+    height: 100vh
+    padding-right: 80px
+    padding-left: 80px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    @include fontRoboto(400)
+    color: $light-three
+    .quotation_mark
+        margin-bottom: 20px
+        img 
+            height:100%
+    .keyword_is
+        position: relative
+        margin-bottom: 10vh
+        color:$light-two
+    .keyword_is:before
+        position: absolute
+        top: -10px
+        display: block
+        content: ""
+        width: 50px
+        height: 2px
+        background-color:$light-one
+        
+    .keyword_box
+        display: grid
+        margin-bottom: 15vh
+        font-size:80px
+        @include fontRoboto(700)
+        div
+            span+span
+                margin-left:50px
+
+@include mobile 
+    .main_page
+        height: 100vh
+        padding: 30px !important
+        .keyword_is
+            font-size:16px
+        .quotation_mark
+            margin-bottom: 20px
+            img 
+                height:5vh
+        .keyword_box
+                margin-bottom: 15%
+                font-size:12.5vw !important
+@include tablet 
+    .main_page
+        width: 768px
+
+        .keyword_is
+            font-size: 20px
+        .keyword_box
+            grid-template-rows: repeat(5, 90px)
+@include desktop 
+    .main_page
+        width: 1280px
+
+        .keyword_is
+            font-size: 20px
+        .keyword_box
+            grid-template-rows: repeat(3, 100px)
