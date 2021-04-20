@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header.jsx";
 import MainPage from "./MainPage.jsx";
+import About from "./About.jsx";
+import "../css/common.css"
 
 const App = ()=> {
   const [reSizeWidth, setWidth] = useState(window.innerWidth);
@@ -13,6 +15,7 @@ const App = ()=> {
     <>
       < Header state={reSizeWidth}/>
       < MainPage state={reSizeWidth}/>
+      < About state={reSizeWidth}/>
     </>
 
   );
