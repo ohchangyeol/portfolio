@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_mixin.scss","../sass/common.sass"],"names":[],"mappings":"AAAQ;AACA;ACER;EACI;;AAEI;EACI;;;ADWV;ECJE;IACI;IACA;IACA;IACA;;EACA;IACI;IACA;IACA;IAEA;;EACJ;IACI","file":"common.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/common.sass"],"names":[],"mappings":"AAAA;EACI;EACA;EACA","file":"common.css"}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+.content_grid {
+  position: relative;
+  align-content: center;
+  margin: auto;
+}
+.content_grid .photo_line {
+  display: none;
+}
+.content_grid .my_photo {
+  box-shadow: 0px 30px 20px -10px #80808060;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.content_grid .my_photo img {
+  width: 100%;
+}
+.content_grid .about_me {
+  display: grid;
+  color: #1E1E1E;
+}
+.content_grid .about_me .my_name {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -2px;
+}
+.content_grid .about_me .my_introduction {
+  line-height: 1.4;
+}
+.content_grid .about_me .my_introduction .title {
+  font-size: 20px;
+}
+.content_grid .about_me .my_introduction .title .introduction_roboto {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 400 !important;
+  color: #3a5d7e;
+}
+
+@media (max-width: 767px) {
+  .content_grid {
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 30px;
+    grid-gap: 16px;
+  }
+  .content_grid .my_photo {
+    grid-column: 2/6;
+  }
+  .content_grid .about_me {
+    grid-column: 1/7;
+    grid-row: 2;
+    text-align: center;
+  }
+  .content_grid .about_me .my_name {
+    font-size: 12.5vw;
+    margin-bottom: 30px;
+  }
+  .content_grid .my_introduction .title {
+    font-size: 18px !important;
+    margin-bottom: 30px;
+  }
+  .content_grid .my_introduction .sub_text {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 768px) {
+  .content_grid {
+    width: 768px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 40px;
+    grid-gap: 30px;
+  }
+  .content_grid .my_photo {
+    grid-column: 4/7;
+    height: 328.969px;
+  }
+  .content_grid .about_me {
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  .content_grid .about_me .my_name {
+    font-size: 70px;
+    margin-bottom: 48px;
+    width: 230px;
+  }
+  .content_grid .my_introduction .title {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1280px) {
+  .content_grid {
+    width: 1280px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+    padding: 0 80px;
+  }
+  .content_grid .photo_line {
+    display: block;
+    background-color: #3a5d7e;
+    padding-bottom: 3px;
+    width: 57%;
+    position: absolute;
+    left: 80px;
+    z-index: -1;
+  }
+  .content_grid .photo_line::after {
+    content: "";
+    width: 20px;
+    padding-bottom: 3px;
+    background-color: #3a5d7e;
+    position: absolute;
+    right: 0;
+    transform: rotate(45deg) translate(-3px, -6px);
+  }
+  .content_grid .my_photo {
+    grid-column: 1/5;
+    height: 346.625px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  .content_grid .about_me {
+    grid-column: 6/13;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 40px;
+  }
+  .content_grid .about_me .my_name {
+    grid-column: 1/4;
+    font-size: 90px;
+    margin-bottom: 32px;
+  }
+  .content_grid .about_me .my_introduction {
+    grid-column: 4/8;
+    grid-row: 2;
+  }
+  .content_grid .about_me .my_introduction .title {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

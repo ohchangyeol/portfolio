@@ -1,0 +1,114 @@
+@import "./mixin"
+@import "./var"
+
+.content_grid
+    position: relative
+    align-content: center
+    margin: auto
+    .photo_line
+        display: none
+    .my_photo
+        box-shadow: 0px 30px 20px -10px #80808060
+        border-radius: 100%
+        overflow: hidden
+        img 
+            width: 100%
+    .about_me
+        display: grid
+        color: $light-three
+        .my_name
+            @include fontRoboto(700)
+            letter-spacing: -2px
+        .my_introduction
+            line-height: 1.4   
+            .title
+                font-size: 20px
+                .introduction_roboto
+                        @include fontRoboto(400)
+                        color: #3a5d7e
+
+@include mobile 
+    .content_grid
+        width: 100%
+        grid-template-columns: repeat(6,1fr)
+        padding: 0 30px
+        grid-gap: 16px
+        
+        .my_photo
+            grid-column: 2/6
+        .about_me
+            grid-column: 1/7
+            grid-row: 2
+            text-align: center
+            .my_name
+                font-size: 12.5vw
+                margin-bottom: 30px
+        .my_introduction
+            .title
+                font-size: 18px !important
+                margin-bottom: 30px
+            .sub_text
+                font-size: 14px !important
+@include tablet 
+    .content_grid
+        width: $breakpoint-tablet
+        grid-template-columns: repeat(6,1fr)
+        padding: 0 40px
+        grid-gap: 30px
+        
+        .my_photo
+            grid-column: 4/7
+            height: 328.969px
+        .about_me
+            grid-column: 1/4
+            grid-row: 1
+            .my_name
+                font-size: 70px
+                margin-bottom: 48px
+                width: 230px
+        .my_introduction
+            .title
+                margin-bottom: 48px
+@include desktop 
+    .content_grid
+        width: $breakpoint-desktop
+        grid-template-columns: repeat(12,1fr)
+        grid-gap: 40px
+        align-items: center
+        padding: 0 80px
+
+        .photo_line
+            display: block
+            background-color: $main-color
+            padding-bottom: 3px
+            width: 57%
+            position: absolute
+            left: 80px
+            z-index: -1
+            &::after
+                content: ""
+                width: 20px
+                padding-bottom: 3px
+                background-color: $main-color
+                position: absolute
+                right: 0
+                transform: rotate(45deg)translate(-3px, -6px)
+        .my_photo
+            grid-column: 1/5
+            height: 346.625px
+            border-radius: 100%
+            overflow: hidden
+        .about_me
+            grid-column: 6/13
+            grid-template-columns: repeat(7,1fr)
+            grid-gap: 40px
+            .my_name
+                grid-column: 1/4
+                font-size: 90px
+                margin-bottom: 32px
+            .my_introduction
+                grid-column: 4/8
+                grid-row: 2
+                .title
+                    margin-bottom: 32px
+                    
