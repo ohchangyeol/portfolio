@@ -1,4 +1,23 @@
+@import "./mixin"
+@import "./var"
+
 .content_grid
     display: grid
+    position: relative
     min-height: 100vh
+    align-content: center
     box-sizing: border-box
+    margin: auto
+    color: $light-three
+    line-height: 1.4  
+
+
+@include mobile 
+    .content_grid
+        @include gridSeting(100%,repeat(6,1fr),0 30px,16px)
+@include tablet 
+    .content_grid
+        @include gridSeting($breakpoint-tablet,repeat(6,1fr),0 40px,30px)
+@include desktop 
+    .content_grid
+        @include gridSeting($breakpoint-desktop,repeat(12,1fr),0 80px,40px)

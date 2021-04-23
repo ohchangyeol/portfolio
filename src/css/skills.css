@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+@media (max-width: 767px) {
+  .good_skill_job {
+    background-color: #3a5d7e;
+  }
+  .good_skill_job .content_grid {
+    color: #fff;
+  }
+  .good_skill_job .content_grid .good_job {
+    grid-column: 1/7;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+  .good_skill_job .content_grid .skill_list {
+    position: relative;
+    grid-column: 1/7;
+    grid-row: 2;
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    justify-content: space-between;
+  }
+  .good_skill_job .content_grid .skill_list::after, .good_skill_job .content_grid .skill_list::before {
+    content: "";
+    padding-bottom: 3px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+  }
+  .good_skill_job .content_grid .skill_list::before {
+    top: 0;
+  }
+  .good_skill_job .content_grid .skill_list::after {
+    bottom: 0;
+  }
+  .good_skill_job .content_grid .skill_list .title {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .good_skill_job .content_grid .skill_list .skill_box {
+    font-size: 10px;
+  }
+  .good_skill_job .content_grid .skill_list .skill_box ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    text-align: right;
+  }
+  .good_skill_job .content_grid .job_list {
+    grid-column: 1/7;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .good_skill_job .content_grid .job_list ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
+  }
+  .good_skill_job .content_grid .job_list ul li {
+    grid-column: 2/6;
+  }
+  .good_skill_job .content_grid .job_list ul li h5 {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    font-size: 20px;
+  }
+  .good_skill_job .content_grid .job_list ul li p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .good_skill_job {
+    background-color: #3a5d7e;
+  }
+  .good_skill_job .content_grid {
+    color: #fff;
+  }
+  .good_skill_job .content_grid .good_job {
+    grid-column: 1/7;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .good_skill_job .content_grid .good_job span {
+    display: block;
+  }
+  .good_skill_job .content_grid .skill_list {
+    position: relative;
+    grid-column: 1/7;
+    grid-row: 2;
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-between;
+  }
+  .good_skill_job .content_grid .skill_list::after, .good_skill_job .content_grid .skill_list::before {
+    content: "";
+    padding-bottom: 3px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+  }
+  .good_skill_job .content_grid .skill_list::before {
+    top: 0;
+  }
+  .good_skill_job .content_grid .skill_list::after {
+    bottom: 0;
+  }
+  .good_skill_job .content_grid .skill_list .title {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  .good_skill_job .content_grid .skill_list .skill_box ul {
+    display: grid;
+    width: 350px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    text-align: right;
+  }
+  .good_skill_job .content_grid .job_list {
+    grid-column: 1/7;
+    margin-top: 10px;
+  }
+  .good_skill_job .content_grid .job_list ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+  }
+  .good_skill_job .content_grid .job_list ul li h5 {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    font-size: 32px;
+  }
+  .good_skill_job .content_grid .job_list ul li p {
+    margin-top: 10px;
+  }
+  .good_skill_job .content_grid .job_list ul .subject0 {
+    grid-column: 1/4;
+  }
+  .good_skill_job .content_grid .job_list ul .subject1 {
+    grid-column: 4/7;
+  }
+  .good_skill_job .content_grid .job_list ul .subject2 {
+    grid-column: 1/4;
+  }
+  .good_skill_job .content_grid .job_list ul .subject3 {
+    grid-column: 4/7;
+  }
+}
+@media (min-width: 1280px) {
+  .good_skill_job {
+    position: relative;
+  }
+  .good_skill_job::after {
+    content: "Good Skills";
+    position: absolute;
+    top: 50%;
+    font-size: 400px;
+    transform: translateY(-50%);
+    left: 40%;
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    color: #fff;
+    text-shadow: -3px 0 #b4b4b418, 0 3px #b4b4b418, 3px 0 #b4b4b418, 0 -3px #b4b4b418;
+    z-index: -1;
+  }
+  .good_skill_job .content_grid .good_job {
+    grid-column: 1/6;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .good_skill_job .content_grid .good_job span {
+    display: block;
+  }
+  .good_skill_job .content_grid .skill_list {
+    grid-column: 6/13;
+    clip-path: polygon(4% 0, 100% 0, 100% 88%, 96% 100%, 0 100%, 0 12%);
+    background-color: #3a5d7e;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 400 !important;
+  }
+  .good_skill_job .content_grid .skill_list .title {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    position: relative;
+    font-size: 28px;
+  }
+  .good_skill_job .content_grid .skill_list .title::before {
+    position: absolute;
+    top: 0px;
+    content: "";
+    padding-bottom: 3px;
+    background-color: #fff;
+    width: 70px;
+  }
+  .good_skill_job .content_grid .skill_list .skill_box ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 75px;
+    line-height: 1.5;
+  }
+  .good_skill_job .content_grid .job_list {
+    grid-column: 1/13;
+    grid-row: 2;
+    margin-top: 48px;
+  }
+  .good_skill_job .content_grid .job_list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .good_skill_job .content_grid .job_list ul li {
+    display: grid;
+    width: 250px;
+    height: 200px;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .good_skill_job .content_grid .job_list ul li h5 {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 700 !important;
+    display: grid;
+    align-items: flex-end;
+    font-size: 38px;
+    padding-bottom: 20px;
+    line-height: 1;
+  }
+  .good_skill_job .content_grid .job_list ul li p {
+    position: relative;
+    padding-top: 20px;
+  }
+  .good_skill_job .content_grid .job_list ul li p::after {
+    content: "";
+    padding-bottom: 3px;
+    width: 100%;
+    background-color: #1E1E1E;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=skills.css.map */
